@@ -3,3 +3,4 @@
 
 + modules: python 简单模块
 + python-tornado: python web 框架
++ python.accerlate: python 加速计算策略
