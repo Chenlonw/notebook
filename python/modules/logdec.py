@@ -25,9 +25,11 @@ def log(func):
         sh.setFormatter(formatter)
         logger.addHandler(fh)
         logger.addHandler(sh)
-        logger.warn('warn message %s'%(func.__name__))
+        logger.warn('warn message before %s'%(func.__name__))
 
-        return func(*args, **kw)
+        result = func(*args, **kw)
+        logger.warn('warn message after %s'%(func.__name__))
+        return result
     return wrapper
 
 @log
