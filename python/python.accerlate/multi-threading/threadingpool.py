@@ -11,10 +11,10 @@ secds = [
     '1',
 ]
 
-def sleep(url):
-    time.sleep(int(url))
+def sleep(secds):
+    time.sleep(int(secds))
 
-num = 2
+num = 8
 # Make the Pool of workers
 pool = ThreadPool(num)
 # Open the urls in their own threads
