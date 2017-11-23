@@ -28,7 +28,8 @@ class absTest(unittest.TestCase):
 
 def abs_suite():
     suite = unittest.TestSuite()
-    suite.addTest(absTest)
+    suite.addTest(absTest('testPositive'))
+    suite.addTest(absTest('testNegative'))
     return suite
 
 if __name__ == '__main__':
