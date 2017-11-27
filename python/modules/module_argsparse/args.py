@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import subprocess
 import argparse
 
 parser = argparse.ArgumentParser()
